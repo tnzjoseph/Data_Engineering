@@ -55,7 +55,7 @@ Create Database
 Create database SQL_1;
 use SQL_1;
 
-Create Table
+### Create Table
 
 CREATE TABLE EmployeeData (
 EmpID INT PRIMARY KEY,
@@ -106,9 +106,9 @@ INSERT INTO EmployeeData VALUES
 (30, 'Reema', 'Jain', 'Female', 29, 'IT', 'QA Engineer', 50000, 5, 'Chennai', 101, '2019-12-19');
 
 
-SQL Keys and Constraints
+### SQL Keys and Constraints
 
-Keys
+### Keys
 Keys are attributes/columns used to identify records and maintain relationships
    between tables.
 1 Primary Key (PK)
@@ -143,7 +143,7 @@ They are the candidate of being primary key.
 4. Alternate Key
 From the set of candidate keys, the key other than primary key is called alternate key.
 
-Constraints
+### Constraints
 
 Rules enforced on database columns to maintain data accuracy and integrity. They help prevent invalid data entries.
 
@@ -157,7 +157,7 @@ CHECK - Ensures that the values in a column satisfies a specific condition
 DEFAULT - Sets a default value for a column if no value is specified
 CREATE INDEX - Creates indexes on columns to retrieve data from the database faster
 
-SQL Commands
+### SQL Commands
 
 1. DDL – Data Definition Language
 Used to define or modify database structures (tables, schemas, indexes).
@@ -187,19 +187,19 @@ SELECT	Fetch data						SELECT Name, Age FROM Students WHERE Age > 18;
 4. DCL – Data Control Language
 Used to control access to data.
 
-Command	Purpose	Example
+### Command	Purpose	Example
 GRANT	Give permissions					GRANT SELECT ON Students TO user1;
 REVOKE	Remove permissions					REVOKE SELECT ON Students FROM user1;
 
 5. TCL – Transaction Control Language
 Used to manage transactions in a database.
 
-Command	Purpose	Example
+### Command	Purpose	Example
 COMMIT	-Save changes	COMMIT;
 ROLLBACK -Undo changes	ROLLBACK;
 SAVEPOINT -Set a point to rollback to	SAVEPOINT sp1;
 SET TRANSACTION	- Define transaction properties	SET TRANSACTION READ ONLY;
 
-Tip:
+### Tip:
 DDL commands auto-commit (changes are permanent immediately).
 DML commands need COMMIT or ROLLBACK to finalize or undo changes.
